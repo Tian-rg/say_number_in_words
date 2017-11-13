@@ -37,6 +37,10 @@ class TooManyDecimalDigits(Exception):
     pass
             
 def __eliminate_leading_zero(num):
+    '''This function is to eleminate the leading zero in a string, which
+    only contains number character.
+    '''
+    
     if num == "0":
         return num
     else:
@@ -47,6 +51,10 @@ def __eliminate_leading_zero(num):
             return num
 
 def __eliminate_trailing_zero(num):
+    ''' This funciotn to eleminate the trailing zero in a string, which
+    only contains number character.
+    '''
+    
     if num == "0":
         return num
     else:
@@ -57,7 +65,7 @@ def __eliminate_trailing_zero(num):
             return num
 
 def sayinchinese(number):
-    '''say the number in Chinese
+    '''Say the number in Chinese
     return: string,
     '''
     
