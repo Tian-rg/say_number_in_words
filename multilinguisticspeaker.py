@@ -7,10 +7,10 @@
 __author__ = "Tian"
 
 def __checknumber(number):
-        
-        number1 = str(number).split(".")[0]
-        if number1=="":
-            number1 = "0"
+       
+    number1 = str(number).split(".")[0]
+    if number1=="":
+        number1 = "0"
         
         if len(number1) > supported_number_length[0]:
             raise NumberTooLargeError("Number is too large to handle")
@@ -125,7 +125,7 @@ def sayinchinese(number):
     else:
         number_half2 = ""
     
-    return number_half1 + number_half2 + "元"
+    return number_half1 + number_half2
 
 def sayinenglish(number):
     '''say the number in english
@@ -233,7 +233,7 @@ def sayinenglish(number):
     else:
         half_two = ""
 
-    return half_one + half_two + " Dollar"   
+    return half_one + half_two
 
 
 def sayinindonesian(number):
@@ -353,13 +353,9 @@ def sayinindonesian(number):
     else:
         half_two = ""
     
-    return half_one + half_two + " Rupiah"
-
-def sayingermany(number):
-    
-    return "number in Germany@"
+    return half_one + half_two
 
 supported_languages = {'Chinese':sayinchinese, 'English':sayinenglish,
                        'Indonesian':sayinindonesian,
-                       'Germany':sayingermany}
+                      }
 supported_number_length = (17,10)
