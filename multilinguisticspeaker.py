@@ -138,6 +138,7 @@ def sayinchinese(number):
 def sayinenglish(number):
     '''say the number in english
     return: string,
+    
     '''
     # 将数字按小数点前后分开成两部分，不同的部分不同的处理方法wwwwwwwwwwwwww
     # Nested functions are used here to hide data and DRY principle
@@ -146,6 +147,9 @@ def sayinenglish(number):
     number = str(number).split(".")
     
     def __to_two_digits(input_number, read_zero = False):
+        '''Say two-digit number in words!
+'''
+        
         __dct_ttd = {"0":"","1":"One", "2":"Two", "3":"Three",
                      "4":"Four", "5":"Five","6":"Six","7":"Seven",
                      "8":"Eight","9":"Nine","10":"Ten","11":"Eleven",
