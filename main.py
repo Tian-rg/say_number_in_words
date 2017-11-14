@@ -9,8 +9,8 @@ def main():
     for lan in sp:
         print (lan)
 
-    nt = saynumberinwords.SayNumberInWords.setlanguage("Chinese")
-    answer = nt.speak("123.5")
+    nt = saynumberinwords.SayNumberInWords.setlanguage("Indonesian")
+    answer = nt.speak("10003323.5001")
     print (answer)
 
 if __name__ == '__main__':
